@@ -50,33 +50,19 @@
   background: #fff;
   font-size: 15px;
 
-
-.article-simple-header
-  padding: 1px 1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow:hidden;
-
-
-.article-simple-title
-  color: #000;
-
-
-a.article-simple-title:visited
-  color: #000;
-
-
-a.article-simple-title:hover
-  color: #38b7ea;
-
-
-.article-simple-span
-  color: #777;
-  font-size: 13px;
-  padding-right: 5px;
-
-.archive-list-year-wrap
+#header
+  position: fixed;
   background: #fff;
-  padding: 15px 20px 5px 22px;
-  margin: 40px 0 0px 0;
+  width: 100%;
+  z-index: 1000;
 
+#container 
+  > .outer
+    @media mq-normal
+      padding-top: logo-size;
+    @media mq-tablet
+      padding-top: logo-size;
+    @media mq-mobile
+      padding-top: logo-size * 2;
+    @media mq-mini
+      padding-top: logo-size * 2;
