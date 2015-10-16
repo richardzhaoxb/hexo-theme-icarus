@@ -8,7 +8,7 @@ hexo.extend.tag.register('mood', function(args, content){
 	result += '<blockquote>';
 	logo = '<span class="fa-stack fa-lg"><i class="fa ' + logo + ' fa-stack-1x"></i></span>';
 	result += hexo.render.renderSync({text: logo + content, engine: 'markdown'});
-	footer = '<span class="cd-date">' + date + ' ' + time + '</span>'
+	footer = '<span>' + date + ' ' + time + '</span>'
 	result += '<footer>' + footer + '</footer>';
 	result += '</blockquote>';
 
