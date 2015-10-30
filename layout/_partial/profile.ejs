@@ -23,8 +23,7 @@
       </div>
     </div>
     <% if(theme.wechat) { %>
-    <div class="contact-info" align="center">
-      <img class="qrcode" src="<%= theme.wechat %>">
+    <div style="background:url(<%= theme.wechat %>) no-repeat;background-size:282px 282px;height:282px;width:282px" align="center" id="wechat-qrcode">
     </div>
     <% } %>
     <% if(theme.contacts) { %>
@@ -32,7 +31,11 @@
       <table class="contact-list">
         <tr>
         <% for(var i in theme.contacts) { %>
-          <td><a href="<%- url_for(theme.contacts[i]) %>" target="_blank" title="<%= i %>"><i class="fa fa-<%= i %>"></i></a></td>
+        <% var fa_icon = i; %>
+        <% if(i == 'telegram') { %>
+          <% fa_icon = 'paper-plane'; %>
+        <% } %>
+        <td><a href="<%- url_for(theme.contacts[i]) %>" target="_blank" title="<%= i %>"><i   class="fa fa-<%= fa_icon %>"></i></a></td>
         <% } %>
         </tr>
       </table>
