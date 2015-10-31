@@ -23,8 +23,11 @@
       </div>
     </div>
     <% if(theme.wechat) { %>
-    <div style="background:url(<%= theme.wechat %>) no-repeat;background-size:282px 282px;height:282px;width:282px" align="center" id="wechat-qrcode">
+    <div class="base-info profile-block" align="center">
+      <div style="background:url(<%= theme.wechat %>) no-repeat;background-size:240px 240px;height:240px;width:240px" id="wechat-qrcode">
     </div>
+    </div>
+    
     <% } %>
     <% if(theme.contacts) { %>
     <div class="contact-info profile-block">
