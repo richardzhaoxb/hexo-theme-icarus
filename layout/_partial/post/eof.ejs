@@ -1,0 +1,33 @@
+<div id="eof" class="print-invisible">
+  <hr class="eof">
+</div>
+
+<style type="text/css">
+hr.eof:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+hr.eof { 
+  height: 30px; 
+  text-align: center;
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+}
+hr.eof:after {
+	content: 'EOF';
+	display: inline-block;
+	position: relative;
+	top: -13px;
+	padding: 0 10px;
+	background: #fff;
+	color: #8c8b8b;
+}
+</style>
