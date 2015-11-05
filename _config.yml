@@ -28,12 +28,6 @@ fb_admins:
 fb_app_id:
 
 
-# Links
-links:
-  并发编程网: http://ifeve.com/
-  刘典的博客: http://blog.sina.com.cn/ld2254432
-  StartupNews: http://news.dbanotes.net/news
-
 # Contacts
 contacts:
   github: http://github.com/JamesPan
