@@ -19,8 +19,8 @@ hexo.extend.tag.register('figure', function(args){
 
 	var result = '<figure>';
 	result += '<img class="lazy nofancy" src="' + grey + '" data-original="' + imgUrl + '"/>';
-	result += '<noscript><img src="' + imgUrl + '"/></noscript>'
-	result += '<figcaption>' + hexo.render.renderSync({text: title, engine: 'markdown'}).replace(/<p>|<\/p>/, '') + '</figcaption>';
+	result += '<noscript><img src="' + imgUrl + '"/></noscript>';
+	result += '<figcaption>' + hexo.render.renderSync({text: title, engine: 'markdown'}).replace(/<p>/, '').replace(/<.p>/, '') + '</figcaption>';
 	result += '</figure>';
 	return result;
 });
